@@ -16,7 +16,10 @@
    id="svg4431"
    version="1.1"
    inkscape:version="0.91 r"
-   sodipodi:docname="scromockup.svg">
+   sodipodi:docname="scromockup.svg"
+   inkscape:export-filename="/home/james/Documents/scroglass/scromock.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4433" />
   <sodipodi:namedview
@@ -27,8 +30,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="132.41966"
-     inkscape:cy="809.24589"
+     inkscape:cx="178.46595"
+     inkscape:cy="2013.8953"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="true"
@@ -75,7 +78,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer6"
-     inkscape:label="text">
+     inkscape:label="text"
+     sodipodi:insensitive="true">
     <flowRoot
        xml:space="preserve"
        id="flowRoot6414"
@@ -272,7 +276,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="nav">
+     inkscape:label="nav"
+     sodipodi:insensitive="true">
     <rect
        style="fill:#005522;fill-opacity:1"
        id="rect4983"
