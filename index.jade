@@ -1,10 +1,16 @@
-extends assets/extends/pagehead
+extends assets/extends/home
 
 block head_end
 	link(rel="stylesheet" href="assets/css/main.css")
 
 block content
-	include assets/includes/navhead
+	include assets/includes/hero-home
+	include assets/includes/gallery-home
+	include assets/includes/smedia-home
+	include assets/includes/vendors-home
+	include assets/includes/about-home
+	include assets/includes/wholesale-home
+	
 
 block body_end
 	script(type="text/javascript" src="assets/js/functions.js")
