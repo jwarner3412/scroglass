@@ -40,7 +40,7 @@
 @media(max-width: 600px)
   .nav-bar-wrap
     position: relative
-    height: 50px
+    height: 60px
     width: 100vw
     padding: 0
     display: flex
@@ -48,20 +48,40 @@
     justify-content: space-between
 
     .nav-logo-wrap
-      margin: 0
-      height: 50px
-      width: 50px
-
-    .nav-list
-      display: none
-      flex: 1
-
-    .mobile-nav-toggle
-      display: inline
       position: absolute
       top: 0
+      bottom: 0
+      left: 0
+      width: 50px
+      height: 50px
+
+    nav
+      .nav-list
+        //display: none
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        flex: 1
+        margin-top: 0
+
+        .button
+          padding: 0
+          margin: auto
+
+        a
+          margin: auto
+          padding: 0
+          text-align: center
+        //  background-color: pink
+
+    .mobile-nav-toggle
+      //position: absolute
+      top: 0
       right: 0
+      bottom: 0
+      display: block
+      height: 50px
+      width: 50px
       background-color: blue
-      height: 50
-      width: 50
       z-index: 1
