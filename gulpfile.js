@@ -19,7 +19,10 @@ var settings = {
 	imgDir: 'assets/img',
 	publicImgDir: '_site/assets/img'
 };
-
+gulp.task('copy-img', function() {
+    gulp.src('./imgDir' + '*/**')
+    .pipe(gulp.dest('./publicImgDir' + '*/**'));
+}); 
 /**
  * Compile .jade files and pass in data from json file
  * matching file name. index.jade - index.jade.json
