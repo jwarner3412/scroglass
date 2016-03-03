@@ -15,7 +15,9 @@ var gulp = require('gulp'),
 var settings = {
 	publicDir: '_site',
 	sassDir: 'assets/css',
-	cssDir: '_site/assets/css'
+	cssDir: '_site/assets/css',
+	imgDir: 'assets/img',
+	publicImgDir: '_site/assets/img'
 };
 
 /**
