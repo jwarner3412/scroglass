@@ -1,91 +1,18 @@
-.nav-bar-wrap
-  position: fixed
-  top: 0
-  left: 0
-  width: $header-width
-  height: 100vh
-  display: flex
-  flex-direction: column
-  flex-wrap: nowrap
-  padding-top: 10px
+.nav-logo-wrap
+  height: 200px
+  +bg-contain('/assets/img/scro-logo.svg')
 
-  .nav-logo-wrap
-    height: $header-width
-    width: $header-width
-    margin: 0 auto
-    background:
-      image: url('/assets/img/scro-logo.svg')
-      size: contain
-      position: top right
-      repeat: no-repeat
+.mobile-nav-toggle
+  display: none
 
-  .mobile-nav-toggle
-    display: none
-
-  nav
-    flex: 1
-
-    .nav-list
-      margin-top: 30px
-
-      a
-        display: block
-        text-align: right
-        margin: 5px
-        padding: 10px
-
-      .ws-button
-        font-weight: bold
-
-
-@media(max-width: 600px)
-  .nav-bar-wrap
-    position: relative
-    height: $mobile-header-height
-    width: 100vw
-    padding: 0
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-
-    .nav-logo-wrap
-      position: absolute
-      top: 0
-      bottom: 0
-      left: 0
-      width: $mobile-header-height
-      height: $mobile-header-height
-
-    nav
-      .nav-list
-        display: none
-        position: absolute
-        top: 0
-        left: 0
-        right: 0
-        flex: 1
-        margin-top: 0
-
-        .button
-          padding: 0
-          margin: auto
-
-        a
-          margin: auto
-          padding: 0
-          text-align: center
-
-    .mobile-nav-toggle
-      //position: absolute
-      top: 0
-      right: 0
-      bottom: 0
+nav
+  .nav-list
+    margin-top: 30px
+    a
       display: block
-      height: $mobile-header-height
-      width: $mobile-header-height
-      background:
-        image: url('/assets/img/scro-logo.svg')
-        size: contain
-        position: top right
-        repeat: no-repeat
-      z-index: 1
+      text-align: right
+      margin: 5px
+      padding: 10px
+
+    .ws-button
+      font-weight: bold

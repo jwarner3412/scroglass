@@ -1,20 +1,21 @@
+$nav-offset: 2
+$content-width: (12 - ($nav-offset * 2))
 .home-wrap
-  display: flex
   background-color: $boring-background-color
+  +outer-container(100%)
 
   header
-    width: $header-width
-    height: 100%
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    +span-columns($nav-offset)
 
   .content-wrap
-    flex: 1
-    display: flex
-    flex-direction: column
+    +shift($nav-offset)
+    +span-columns($content-width)
+    height: 1000px
 
-@media(max-width: 600px)
-  .home-wrap
-    flex-direction: column
-
-    .nav
-      width: auto
-      height: $mobile-header-height
+  aside
+    +span-columns($nav-offset)
+    +omega

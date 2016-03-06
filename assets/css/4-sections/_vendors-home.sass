@@ -1,5 +1,20 @@
-.vendors
-  li
+.vendors-home
+  *
+    text-align: center
+  .vendor-title
+  +span-columns($content-width of $content-width)
+
+  .vendor-lists
+    li:last-child
+      margin-bottom: 20px
+
+    .col1
+      +span-columns(($content-width/2) of $content-width)
+
+  .vendor-footer
+    +span-columns($content-width of $content-width)
+    margin: 20px 0
+
     a
-      display: block
-      text-align: center
+      font-weight: bold
+      font-size: 1.1em

@@ -1,15 +1,26 @@
-section.vendors
-  .col1
-    h1 Where can i find one scro??
-  .col2
-    ul.us-ri
-      li
-        a(href='https://www.headshopfinder.com/head-shop.php?id=4892' target='_blank') Rigs
-      li
-        a(href='https://www.headshopfinder.com/head-shop.php?id=2482' target='_blank') Aparatus
-  .col2
-  
-  .col1
+mixin emaillink
+  a(href="mailto:scroglass@gmail.com" id="email").button +email us
+
+section.vendors-home
+  .vendor-title
+    h1 Where can i find one??
+  .vendor-lists
+    .col1
+      h2 Rhode Island
+      ul.us-ri
+        li
+          a(href='https://www.headshopfinder.com/head-shop.php?id=4892' target='_blank').button Rigs
+        li
+          a(href='https://www.headshopfinder.com/head-shop.php?id=2482' target='_blank').button Aparatus
+
+    .col1
+      h2 Online
+      ul
+        li
+          a(href='www.aqualabtechnologies.com' target='_blank').button AquaLabTechnologies
+
+  .vendor-footer
     p *note: Inventory not guarunteed, please call ahead.
-    h3 Do you sell Autopilots? Want to be listed? 
-    a(mailto= "jwarner3412@gmail.com" id="email") +email us
+    h3 Do you sell Autopilots? Want to be listed?
+    +emaillink
+    

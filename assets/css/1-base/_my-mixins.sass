@@ -1,0 +1,13 @@
+@mixin bg-contain($loc)
+  background:
+    image: url($loc)
+    repeat: no-repeat
+    size: contain
+    position: top right
+
+@mixin bg-cover($loc)
+  background:
+    image: url($loc)
+    repeat: no-repeat
+    size: cover
+    position: top right

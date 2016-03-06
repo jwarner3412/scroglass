@@ -21,3 +21,11 @@
 @import "grid/visual-grid";
 @import "grid/display-context";
 @import "grid/direction-context";
+
+// neat vars
+
+
+@mixin mobile-col {
+  @include span-columns(4);
+  @include omega;
+};
