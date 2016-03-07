@@ -1,0 +1,17 @@
+mixin emaillink (text)
+  a(href="mailto:scroglass@gmail.com" id="email").button=text
+
+mixin navitems
+  ul.nav-list
+    li
+      a(href="#home").button Home
+    li
+      a(href="#social-media").button Social Media
+    li
+      a(href="#vendors").button Where to buy
+    li
+      a(href="#about").button About
+    li
+      a(href="#wholesale-form").ws-button.button Wholesale Info
+    li
+      +emaillink('Email Us!')

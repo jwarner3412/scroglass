@@ -1,20 +1,42 @@
 .hero-home
-  height: 300px
-  width: auto
   +bg-contain('/assets/img/autopilot-back1.jpg')
 
   .hero-scro-logo
-    +span-columns(($content-width/2) of $content-width)
-    height: 100%
     +bg-contain('/assets/img/scro-leaf.svg')
-    z-index: 1
 
-  .hero-hook
-    height: 100%
-    +span-columns(($content-width/2) of $content-width)
-    display: flex
-    align-items: flex-end
+@mixin hero-large-layout
+  .hero-home
+    height: 50vh
 
-    h1
-      text-align: center
-      margin-bottom: 20px
+    .hero-scro-logo
+      height: 100%
+
+    .hero-hook
+      height: 100%
+      display: flex
+      align-items: flex-end
+
+      h1
+        text-align: left
+        margin-bottom: 20px
+
++media($large-viewport)
+  +hero-large-layout
+
++media($tablet)
+  +hero-large-layout
+
++media($mobile)
+  .hero-home
+    height: 50vh
+
+    .hero-scro-logo
+      background-position: center
+      height: 50%
+      width: 100%
+
+    .hero-hook
+      width: 100%
+      h1
+        text-align: center
+        padding: 0 10px

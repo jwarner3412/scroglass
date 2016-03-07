@@ -1,21 +1,56 @@
-$nav-offset: 2
-$content-width: (12 - ($nav-offset * 2))
 .home-wrap
-  background-color: $boring-background-color
   +outer-container(100%)
 
-  header
-    position: fixed
-    top: 0
-    bottom: 0
-    left: 0
-    +span-columns($nav-offset)
++media($large-viewport)
+  .home-wrap
+    header
+      position: fixed
+      top: 0
+      bottom: 0
+      left: 0
+      +span-columns($nav-offset)
 
-  .content-wrap
-    +shift($nav-offset)
-    +span-columns($content-width)
-    height: 1000px
+    .content-wrap
+      +shift($nav-offset)
+      +span-columns($content-width)
 
-  aside
-    +span-columns($nav-offset)
-    +omega
+    aside
+      +span-columns($nav-offset)
+      +omega
+
++media($tablet)
+  .home-wrap
+    header
+      position: fixed
+      top: 0
+      bottom: 0
+      left: 0
+      +span-columns($nav-offset)
+
+    .content-wrap
+      +shift($nav-offset)
+      +span-columns($content-width)
+      +omega
+
+    aside
+      +span-columns($content-width)
+      +shift($nav-offset)
+      +omega
+
++media($mobile)
+  .home-wrap
+    header
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      background-color: $logo-pot-green
+      +span-columns(4)
+
+    .content-wrap
+      +span-columns(4)
+      margin-top: $mobile-nav-height
+
+
+    aside
+      +span-columns(4)

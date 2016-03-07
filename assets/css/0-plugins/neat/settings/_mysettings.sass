@@ -1,0 +1,30 @@
+@import "../neat-helpers"
+// or "neat-helpers" when in Rails
+
+// Change the grid settings
+$column: 90px
+$gutter: 30px
+$grid-columns: 12
+$max-width: 1200px
+
+// Define your breakpoints
+$first-breakpoint-value: 10px
+$second-breakpoint-value: 640px
+$third-breakpoint-value: 770px
+
+//column counts, nav-offset is navbar width in large and tablet
+$nav-offset: 2
+$large-viewport-col: 12
+$tablet-col: $large-viewport-col - $nav-offset
+$mobile-col: 4
+
+//content width in large-viewport and tablet
+$content-width: ($large-viewport-col - ($nav-offset * 2))
+
+//navbar height for content offset in mobile
+$mobile-nav-height: 50px
+
+//breakpoints
+$mobile: new-breakpoint(min-width $first-breakpoint-value max-width $second-breakpoint-value $mobile-col)
+$tablet: new-breakpoint(min-width $second-breakpoint-value + 1 max-width $third-breakpoint-value $tablet-col)
+$large-viewport: new-breakpoint(min-width $third-breakpoint-value + 1 $large-viewport-col)
