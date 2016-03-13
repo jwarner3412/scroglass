@@ -1,0 +1,30 @@
+@mixin column-setup-large
+  .content-wrap
+    .full-width
+      +span-columns($content-width of $content-width)
+
+    .half-width
+      +span-columns(($content-width/2) of $content-width)
+      .quarter-width
+        +span-columns(($content-width/4) of ($content-width/2))
+
++media($large-viewport)
+  +column-setup-large
+
++media($tablet)
+  +column-setup-large
+  .mobile-half-width
+    +span-columns(($content-width/2) of $content-width)
+
++media($mobile)
+  .content-wrap
+    .full-width,
+    .half-width
+      +span-columns($mobile-col of $mobile-col)
+      .quarter-width
+        +span-columns(($mobile-col/2) of $mobile-col)
+
+  .mobile-full-width
+    +span-columns($mobile-col of $mobile-col)
+  .mobile-half-width
+    +span-columns(($mobile-col/2) of $mobile-col)

@@ -1,0 +1,6 @@
+nav
+  ul.nav-list
+    {% for home in site.home_sections %}
+    li 
+      a(href="{{site.baseurl}}/#{{ home.title }}" class="button") {{ home.title }}
+    {% endfor %}

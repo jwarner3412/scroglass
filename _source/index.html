@@ -1,0 +1,8 @@
+---
+layout: default
+---
+
+{% for home in site.home_sections %}
+  <a name="{{home.title}}"></a>
+  {{ home.content }}
+{% endfor %}

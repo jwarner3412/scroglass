@@ -1,0 +1,17 @@
+|---
+|title: Find One
+|---
+| 
+section.vendors-home.full-width
+  .vendor-title
+    h1 Where can i find one??
+  .vendor-lists.full-width
+    ul
+      {% for i in site.data.vendors.loc %}
+      li {{i.loc}}
+      {% endfor %}  
+  .vendor-footer.full-width
+    p *note: Inventory not guarunteed, please call ahead.
+    h3 Do you sell Autopilots? Want to be listed?
+    {{ site.email }}
+    

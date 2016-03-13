@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% include body-start.html %}
+
+    <div class="home-wrap">
+      {% include header.html %}
+        <div class="content-wrap">
+          {{ content }}
+        </div>
+      {% include aside.html %}
+      {% include footer.html %}
+    </div>
+
+    {% include body-end.html %}
+
+  </body>
+
+</html>

@@ -1,0 +1,13 @@
+@mixin gal-omega
+.gal-img
+  &:nth-child(2n)
+    +omega
+
++media($large-viewport)
+  +gal-omega
+
++media($tablet)
+  +gal-omega
+
++media($mobile)
+  +gal-omega

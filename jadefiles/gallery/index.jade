@@ -1,0 +1,12 @@
+|---
+|layout: default
+|---
+| 
+.gallery-wrap.full-width
+  {% for image in site.static_files %}
+  {% if image.path contains 'images/gallery' %}
+  .gal-img.mobile-half-width.half-width
+    a(href="{{ site.baseurl }}{{ image.path }}")
+      img(src="{{ site.baseurl }}{{ image.path }}" alt="image")
+  {% endif %}
+  {% endfor %}
