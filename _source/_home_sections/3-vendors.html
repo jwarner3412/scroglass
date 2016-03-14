@@ -5,4 +5,4 @@ title: Find One
 {% if i.loc == 'RI'%}<li><a href="{{i.url}}" target="_blank" class="link-button">{{i.name}}</a></li>{% endif %}
 {% endfor %}</ul></div><div class="vendors-web half-width"><h2>Online</h2><ul>{% for i in site.data.vendors %}
 {% if i.loc == 'web'%}<li><a href="{{i.url}}" target="_blank" class="link-button">{{i.name}}</a></li>{% endif %}
-{% endfor %}</ul></div></div><div class="vendor-footer full-width"><p>*note: Inventory not guarunteed, please call ahead.</p><h3>Do you sell Autopilots? Want to be listed?</h3><a href="mailto:{{ site.email }}" class="button">{{site.email}}</a></div></section>
+{% endfor %}</ul></div></div><div class="vendor-footer full-width"><p>*note: Inventory not guarunteed, please call ahead.</p><h3>Want to become a distributor?</h3><a href="{{ site.baseurl }}/wholesale" class="button">Wholesale-Information</a></div></section>

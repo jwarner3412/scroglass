@@ -31,7 +31,7 @@
       margin-top: 35%
     a
       display: block
-      text-align: left
+      text-align: right
 
 +media($mobile)
   .nav
@@ -53,3 +53,9 @@
     +omega
     height: 100%
     +bg-contain('/images/hamburger.svg')
+
+  .nav-is-open
+    li
+      display: relative
+    a
+      text-align: center

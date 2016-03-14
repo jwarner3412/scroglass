@@ -1,0 +1,43 @@
+|---
+|title: Wholesale Info - {{site.title}}
+|layout: default
+|---
+| 
+.wholesale-page
+  h1 Become a Distributor
+  .wholesale-form
+    form(action='http://formspree.io/scroglass@gmail.com' method='POST').full-width
+      .half-width
+        h3 I'd like to:
+      label(for='contact-type').half-width
+        h3 Sell Autopilots!
+        input(type='radio' name='contact-type' value='wholesaler-info')
+
+        h3 listed as a dealer
+        input(type='radio' name='contact-type' value='add-vendor')
+
+        h3 Sign me up for both!
+        input(type='radio' name='contact-type' value='inq-info-add' checked)
+
+      label(for='name').half-width
+        h3 Your Name:
+        input(type='text' name='name')
+
+      label(for='company').half-width
+        h3 Company:
+        input(type='text' name='company')
+
+      label(for='email').half-width
+        h3 Email:
+        input(type='email' name='_replyto')
+
+      label(for='phone').half-width
+        h3 Contact Phone:
+        input(type='tel' name='tel')
+
+      label(for='comments').full-width
+        h3 Comments:
+        input(type='text' name='comments')
+
+      label(for='submit').full-width
+        input(type='submit' value='Send').button
