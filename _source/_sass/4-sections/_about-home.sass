@@ -2,33 +2,50 @@
   p
     margin: 5%
     text-align: center
-  h1,
-  h2
+
+  .link-wrap
+    display: flex
+    align-items: center
+    padding: 5% 0 10% 0
+
+  #gallery-link
     text-align: center
     line-height: 1.5em
+    margin: 0 auto
 
   .large-photo
-    padding: 0 15% 0 15%
+    padding: 0 5% 0 5%
 
-  .youtube-vid
-    +flex-column-center
+  .youtube-container
+    position: relative
+    padding-bottom: 56.25%
+    height: 0
+    overflow: hidden
+    max-width: 100%
 
-    .youtube-container
-      position: relative
-      padding-bottom: 56.25%
-      height: 0
-      overflow: hidden
-      max-width: 100%
-
-    .youtube-container
-      iframe,
-      object,
-      embed
-        position: absolute
-        top: 0
-        right: 0
-        width: 100%
-        height: 100%
+  .youtube-container
+    iframe,
+    object,
+    embed
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
 
   .insta-vid
     padding: 1% 5%
+
+  @mixin gal-omega
+    .gal-img
+      &:nth-child(2n)
+        +omega
+
+  +media($large-viewport)
+    +gal-omega
+
+  +media($tablet)
+    +gal-omega
+
+  +media($mobile)
+    +gal-omega

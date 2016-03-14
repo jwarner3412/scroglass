@@ -49,7 +49,7 @@ var settings = {
 };
 
 //build jade files
-gulp.task('jade', () =>
+gulp.task('jade', ['clean'], () =>
   gulp.src('jadefiles/**/*.jade')
     .pipe(jade({
       pretty: ''
@@ -88,7 +88,7 @@ gulp.task('copy', () =>
   gulp.src([
     '_site/*',
     '!_site/*.html',
-    'node_modules/apache-server-configs/dist/.htaccess'
+    '/node_modules/apache-server-configs/dist/.htaccess'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'))
@@ -188,7 +188,7 @@ gulp.task('html', ['jekyll'], () => {
 });
 
 // Clean output directory
-gulp.task('clean', () => del(['.tmp', 'dist/*', '!dist/.git', '!dist/.gitignore'], {dot: true}));
+gulp.task('clean', () => del(['.tmp', 'dist/*', '_site/*', '.sass-cache/', '!dist/.git', '!dist/.gitignore'], {dot: true}));
 
 // Watch files for changes & reload
 gulp.task('default', ['jekyll'], () => {
@@ -234,7 +234,8 @@ gulp.task('serve:dist', ['build:dist'], () =>
 gulp.task('build:dist', ['clean'], cb =>
   runSequence(
     'html',
-    ['lint', 'styles', 'scripts', 'images', 'copy'],
+    'copy',
+    ['lint', 'styles', 'scripts', 'images'],
     'generate-service-worker',
     cb
   )

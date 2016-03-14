@@ -28,5 +28,5 @@ section.smedia-home.full-width
     h2 Dont forget to check out these great artists too!
     ul
       {% for i in site.data.artists %}
-      li: a(href="https://facebook.com/{{i.facebook}}"){{i.name}}
+      li: a(href='https://facebook.com/{{i.facebook}}' target='_blank' class='link-button'){{i.name}}
       {% endfor %}

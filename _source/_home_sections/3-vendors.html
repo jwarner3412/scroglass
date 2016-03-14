@@ -1,4 +1,8 @@
 ---
 title: Find One
 ---
- <section class="vendors-home full-width"><div class="vendor-title"><h1>Where can i find one??</h1></div><div class="vendor-lists full-width"><ul>{% for i in site.data.vendors.loc %}<li>{{i.loc}}</li>{% endfor %}  </ul></div><div class="vendor-footer full-width"><p>*note: Inventory not guarunteed, please call ahead.</p><h3>Do you sell Autopilots? Want to be listed?</h3>{{ site.email }}</div></section>
+ <section class="vendors-home full-width"><div class="vendor-title"><h1>Where can i find one??</h1></div><div class="vendor-lists full-width"><div class="vendors-ri half-width"><h2>Rhode Island</h2><ul>{% for i in site.data.vendors %}
+{% if i.loc == 'RI'%}<li><a href="{{i.url}}" target="_blank" class="link-button">{{i.name}}</a></li>{% endif %}
+{% endfor %}</ul></div><div class="vendors-web half-width"><h2>Online</h2><ul>{% for i in site.data.vendors %}
+{% if i.loc == 'web'%}<li><a href="{{i.url}}" target="_blank" class="link-button">{{i.name}}</a></li>{% endif %}
+{% endfor %}</ul></div></div><div class="vendor-footer full-width"><p>*note: Inventory not guarunteed, please call ahead.</p><h3>Do you sell Autopilots? Want to be listed?</h3><a href="mailto:{{ site.email }}" class="button">{{site.email}}</a></div></section>

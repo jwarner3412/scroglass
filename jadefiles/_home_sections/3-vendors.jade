@@ -6,12 +6,26 @@ section.vendors-home.full-width
   .vendor-title
     h1 Where can i find one??
   .vendor-lists.full-width
-    ul
-      {% for i in site.data.vendors.loc %}
-      li {{i.loc}}
-      {% endfor %}  
+    .vendors-ri.half-width
+      h2 Rhode Island
+      ul
+        {% for i in site.data.vendors %}
+        {% if i.loc == 'RI'%}
+        li: a(href='{{i.url}}' target='_blank' class='link-button') {{i.name}}
+        {% endif %}
+        {% endfor %}
+
+    .vendors-web.half-width
+      h2 Online
+      ul
+        {% for i in site.data.vendors %}
+        {% if i.loc == 'web'%}
+        li: a(href='{{i.url}}' target='_blank' class='link-button') {{i.name}}
+        {% endif %}
+        {% endfor %}
+
   .vendor-footer.full-width
     p *note: Inventory not guarunteed, please call ahead.
     h3 Do you sell Autopilots? Want to be listed?
-    {{ site.email }}
+    a(href="mailto:{{ site.email }}" class='button') {{site.email}}
     

@@ -1,11 +1,22 @@
 .home-wrap
-  .button:hover
+  .link-button:hover
     background:
       color: $logo-green-dark
     color: $logo-tan
 
-  a
+  .link-button,
+  .button
     font-weight: bold
     color: $logo-green-dark
     padding: 5px
+    margin: 5px
     border-radius: 5px
+
+  .button
+    background:
+      color: $logo-green-dark
+    color: $logo-tan
+    &:hover
+      background:
+        color: $logo-green
+      color: $logo-brown-dark

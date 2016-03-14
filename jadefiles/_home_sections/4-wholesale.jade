@@ -3,3 +3,28 @@
 |---
 | 
 section.wholesale-home
+  h1 Become a Distributor
+
+  form(action='http://formspree.io/scroglass@gmail.com' method='POST').full-width
+    label(for='name').half-width
+      h3 Your Name:
+      input(type='text' name='name')
+
+    label(for='company').half-width
+      h3 Company:
+      input(type='text' name='company')
+
+    label(for='email').half-width
+      h3 Email:
+      input(type='email' name='_replyto')
+
+    label(for='phone').half-width
+      h3 Contact Phone:
+      input(type='tel' name='tel')
+
+    label(for='comments').full-width
+      h3 Comments:
+      input(type='text' name='comments')
+
+    label(for='submit').full-width
+      input(type='submit' value='Send').button

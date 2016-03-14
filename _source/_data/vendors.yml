@@ -1,11 +1,11 @@
-loc:
-  Rhode Island:
-  - name: Rigs Wakefield
-    url: 'https://www.headshopfinder.com/head-shop.php?id=4892'
+- name: Rigs Wakefield
+  loc: RI
+  url: 'https://www.headshopfinder.com/head-shop.php?id=4892'
 
-  - name: Aparatus
-    url: 'https://www.headshopfinder.com/head-shop.php?id=2482'
+- name: Aparatus
+  loc: RI
+  url: 'https://www.headshopfinder.com/head-shop.php?id=2482'
 
-  Online:
-  - name: Aqualab Technologies
-    url: 'https://www.aqualabtechnologies.com'
+- name: Aqualab Technologies
+  loc: web
+  url: 'https://www.aqualabtechnologies.com'
