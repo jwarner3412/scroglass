@@ -1,5 +1,6 @@
 //@mixin smedia-large-layout
 .smedia-home
+  text-align: center
   p
     margin: 5%
     text-align: center
@@ -8,22 +9,8 @@
     text-align: center
     padding-top: 40px
 
-  .smedia-like-wrap
-    .insta-vid
-      padding: 2.5% 5%
-
-  .fb-wrap,
   .collab-wrap
     +flex-column-center
+
     a
       display: block
-
-+media($large-viewport)
-  .smedia
-    .insta-vid
-      +omega
-
-+media($tablet)
-  .smedia
-    .insta-vid
-      +omega
