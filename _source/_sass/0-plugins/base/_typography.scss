@@ -3,6 +3,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+  background-color: $boring-background-color;
 }
 
 h1,
@@ -17,6 +18,18 @@ h6 {
   margin: 0 0 $small-spacing;
 }
 
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
 p {
   margin: 0 0 $small-spacing;
 }
@@ -29,7 +42,7 @@ a {
   &:active,
   &:focus,
   &:hover {
-    color: shade($action-color, 25%);
+    color: tint($action-color, 75%);
   }
 }
 

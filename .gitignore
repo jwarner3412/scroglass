@@ -1,9 +1,8 @@
-node_modules/
-dist/
+node_modules
+dist
 .tmp
 app.yaml
-
-_site/
+_site
 .sass-cache
 .jekyll-metadata
 

@@ -6,9 +6,24 @@
  $grid-columns: 12;
  $max-width: 1200px;
 
-// Neat Breakpoints
-$medium-screen: 600px;
-$large-screen: 900px;
+// Define your breakpoints
+$first-breakpoint-value: 1px;
+$second-breakpoint-value: 568px;
+$third-breakpoint-value: 1000px;
 
-$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
-$large-screen-up: new-breakpoint(min-width $large-screen 8);
+//column counts, nav-offset is navbar width in large and tablet
+$nav-offset: 2;
+$large-viewport-col: 12;
+$tablet-col: $large-viewport-col - $nav-offset;
+$mobile-col: 4;
+
+//content width in large-viewport and tablet
+$content-width: ($large-viewport-col - ($nav-offset * 2));
+
+//navbar height for content offset in mobile
+$mobile-nav-height: 50px;
+
+//breakpoints
+$mobile: new-breakpoint(min-width $first-breakpoint-value max-width $second-breakpoint-value - 1 $mobile-col);
+$tablet: new-breakpoint(min-width $second-breakpoint-value max-width $third-breakpoint-value - 1 $tablet-col);
+$large-viewport: new-breakpoint(min-width $third-breakpoint-value $large-viewport-col);
