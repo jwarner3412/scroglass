@@ -12,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: $really-small-spacing $small-spacing;
   text-decoration: none;
   transition: background-color $base-duration $base-timing;
   user-select: none;
@@ -39,12 +39,10 @@
 .link-button {
   font-weight: bold;
   color: $logo-green-dark;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
+  padding: $really-small-spacing $small-spacing;
+  border-radius: $base-border-radius;
 
   &:hover {
-    padding: $small-spacing $base-spacing;
     background-color: $logo-green-dark;
     color: $logo-tan;
     box-shadow: 0px 3px 10px rgba(164, 115, 67, 0.5);

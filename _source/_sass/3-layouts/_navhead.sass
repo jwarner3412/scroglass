@@ -1,56 +1,66 @@
-.home-wrap
-  header
-    background-color: $boring-background-color
+#nav-toggle
+  display: none
+
+.nav-head
+  background-color: $boring-background-color
+
+.nav-logo-wrap
+  +bg-contain('/images/scro-logo.svg')
+
+.nav-list
+  text-align: center
 
 +media($large-viewport)
+  .nav-list
+    text-align: center
+    margin: 20% 0
+    li
+      margin-top: 5%
+
+  .mobile-nav-toggle
+    display: none
+
   .nav-logo-wrap
     height: 25%
-    +bg-contain('/images/scro-logo.svg')
-
-  .mobile-nav-toggle
-    display: none
-
-  nav
-    a
-      display: block
-      text-align: center
 
 +media($tablet)
-  .nav-logo-wrap
-    height: 15%
-    +bg-contain('/images/scro-logo.svg')
+  .nav-list
+    text-align: center
+    margin: 20% 0
+    li
+      margin-top: 5%
 
   .mobile-nav-toggle
     display: none
 
-  nav
-    a
-      display: block
-      text-align: center
+  .nav-logo-wrap
+    height: 25%
+
+  .nav-list
+    font-size: 0.9em
 
 +media($mobile)
-  .nav
-    height: $mobile-nav-height
   .nav-logo-wrap
-    +span-columns(($mobile-col/4) of $mobile-col)
-    height: 100%
-    +bg-contain('/images/scro-logo.svg')
+    width: $mobile-nav-height
+    height: $mobile-nav-height
 
-  nav
-    +span-columns(($mobile-col/2) of $mobile-col)
-    height: 100%
-    .nav-list
-      li
-        display: none
+  .nav-head
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+  .nav-list
+    display: none
+    padding: 5% 0
+    li
+      margin-top: 5%
 
   .mobile-nav-toggle
-    +span-columns(($mobile-col/4) of $mobile-col)
-    +omega
-    height: 100%
+    width: $mobile-nav-height
+    height: $mobile-nav-height
     +bg-contain('/images/hamburger.svg')
 
-  .nav-is-open
-    li
-      display: relative
-    a
-      text-align: center
+  #nav-toggle
+    &:checked + .home-wrap
+      .nav-list
+        display: block
