@@ -211,6 +211,7 @@ gulp.task('default', ['jekyll'], () => {
   gulp.watch(['_source/**/*.md'], ['jekyll', reload]);
   gulp.watch(['_source/**/*.html'], ['jekyll', reload]);
   gulp.watch(['_source/**/*.sass'], ['jekyll', reload]);
+  gulp.watch(['_source/**/*.scss'], ['jekyll', reload]);
   gulp.watch(['jadefiles/**/*.jade'], ['jekyll', reload]);
 });
 

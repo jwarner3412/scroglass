@@ -1,7 +1,7 @@
 table {
   border-collapse: collapse;
-  margin: $small-spacing 0;
-  table-layout: fixed;
+  margin: $base-spacing 0;
+  //table-layout: fixed;
   width: 100%;
 }
 
@@ -13,8 +13,8 @@ th {
 }
 
 td {
-  border-bottom: $base-border;
-  padding: $small-spacing 0;
+  //border-bottom: $base-border;
+  padding: 0 $small-spacing;
 }
 
 tr,

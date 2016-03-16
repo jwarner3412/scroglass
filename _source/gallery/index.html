@@ -1,6 +1,6 @@
 ---
 layout: default
 ---
- <div class="gallery-wrap full-width">{% for image in site.static_files %}
+ <div class="title-wrap"></div><div class="gallery-wrap full-width">{% for image in site.static_files %}
 {% if image.path contains 'images/gallery' %}<div class="gal-img mobile-half-width half-width"><a href="{{ site.baseurl }}{{ image.path }}"><img src="{{ site.baseurl }}{{ image.path }}" alt="image"/></a></div>{% endif %}
 {% endfor %}</div>

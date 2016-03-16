@@ -2,32 +2,38 @@
   .button
     float: right
 
+  #comments
+    height: 105px
+
+  .wholesale-tag
+    +bg-cover('/images/gallery/IMG_2444.JPG')
+    height: 50vh
+
+  .bk-filter
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    padding-bottom: 7.5%
+
+  h1
+    font-size: 2em
+    text-align: center
+
+  form
+    padding: 2.5% 5%
+
+
 +media($large-viewport)
   .wholesale-page
-    h1
-      text-align: center
-
-    label:nth-child(2n)
+    .half-width:nth-child(2n)
       +omega
-
-    form
-      padding: 0 10% 0 10%
 
 +media($tablet)
   .wholesale-page
-    h1
-      text-align: center
-
-    label:nth-child(2n)
+    .half-width:nth-child(2n)
       +omega
-
-    form
-      padding: 0 5% 0 5%
 
 +media($mobile)
   .wholesale-page
-    h1
-      text-align: center
-
     form
-      padding: 0 10% 0 10%
+      padding: 5% 10%
