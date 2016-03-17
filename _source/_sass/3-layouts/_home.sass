@@ -1,7 +1,8 @@
 .home-wrap
   +outer-container(100%)
-  .nav-head
-    z-index: 1
+
+.nav-head
+  z-index: 1
 
 +media($large-viewport)
   .nav-head
@@ -20,32 +21,30 @@
     +omega
 
 +media($tablet)
-  .home-wrap
-    .nav-head
-      position: fixed
-      top: 0
-      bottom: 0
-      left: 0
-      +span-columns($nav-offset)
+  .nav-head
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    +span-columns($nav-offset)
 
-    .content-wrap
-      +shift($nav-offset)
-      +span-columns($content-width)
-      +omega
+  .content-wrap
+    +shift($nav-offset)
+    +span-columns($content-width)
+    +omega
 
-    aside
-      +span-columns($content-width)
-      +shift($nav-offset)
-      +omega
+  aside
+    +span-columns($content-width)
+    +shift($nav-offset)
+    +omega
 
 +media($mobile)
-  .home-wrap
-    .nav-head
-      position: fixed
-      top: 0
-      left: 0
-      right: 0
-      background-color: $logo-pot-green
+  .nav-head
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    background-color: $logo-pot-green
 
-    .content-wrap
-      margin-top: $mobile-nav-height
+  .content-wrap
+    margin-top: $mobile-nav-height
