@@ -2,18 +2,18 @@
 |title: Home
 |---
 | 
-section.hero-home
-  .bk-filter
-    .hero-scro-logo.half-width
-
-    .hero-hook.half-width
+section.full-width
+  .hero-home
+    .bk-filter
       .media-stack
-        .fb-like(data-href='https://www.facebook.com/scroglass' data-layout='button' data-action='like' data-show-faces='true' data-share='true')
+        .fb-like(data-href='https://www.facebook.com/scroglass' data-layout='button' data-action='like' data-show-faces='true' data-share='false')
         .ig-follow(data-id='8afa14b6df' data-handle='scroglass' data-count='false' data-size='medium' data-username='false')
+      .hero-scro-logo.half-width
 
-      h1 Creators of the <em>Original</em> <br><strong>Autopilot Torch Rig</strong>.
-  
-  .gallery-home
+      .hero-hook.half-width
+        h1 Creators of the <em>Original</em> <br><strong>Autopilot Torch Rig</strong>.
+
+  .gallery-home.full-width
     .large-photo.full-width
       img(src='{{ site.baseurl }}/images/gallery/10896871_1525337984412341_6907829687480644071_n.jpg')
     .thumb-wrap.half-width
@@ -26,5 +26,5 @@ section.hero-home
         img(src='{{ site.baseurl }}/images/thumb3.jpg')
       .thumb-photo.quarter-width
         img(src='{{ site.baseurl }}/images/thumb4.jpg')
-  .link-wrap.full-width
-    a(href="{{site.baseurl}}/gallery").button#gallery-link More Photos
+    .link-wrap.full-width
+      a(href="{{site.baseurl}}/gallery").button#gallery-link More Photos

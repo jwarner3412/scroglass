@@ -4,6 +4,12 @@
 .nav-head
   z-index: 1
 
+section
+  margin-bottom: 3em
+
+footer
+  margin-top: 5%
+
 +media($large-viewport)
   .nav-head
     position: fixed
@@ -13,6 +19,10 @@
     +span-columns($nav-offset)
 
   .content-wrap
+    +shift($nav-offset)
+    +span-columns($content-width)
+
+  footer
     +shift($nav-offset)
     +span-columns($content-width)
 
@@ -33,6 +43,11 @@
     +span-columns($content-width)
     +omega
 
+  footer
+    +span-columns($content-width)
+    +shift($nav-offset)
+    +omega
+
   aside
     +span-columns($content-width)
     +shift($nav-offset)
@@ -48,3 +63,13 @@
 
   .content-wrap
     margin-top: $mobile-nav-height
+    +span-columns(4)
+    +omega
+
+  footer
+    +span-columns(4)
+    +omega
+
+  aside
+    +span-columns(4)
+    +omega
