@@ -3,11 +3,11 @@
 
 # TEAM
 
-  <name> -- <role> -- <twitter>
+  <james.warner> -- <dev> -- <@jwarner87>
 
 # THANKS
 
-  <name>
+  <pete.cindrich>
 
 # TECHNOLOGY COLOPHON
 
