@@ -2,25 +2,18 @@
   .button
     float: right
 
+  .bk-filter
+    padding: $base-spacing*1.5 0
+
   #comments
     height: 105px
 
   .wholesale-tag
     +bg-cover('/images/gallery/IMG_2444.JPG')
-    height: 50vh
-
-  .bk-filter
-    display: flex
-    justify-content: center
-    align-items: flex-end
-    padding-bottom: 7.5%
-
-  h1
-    font-size: 2em
     text-align: center
 
   form
-    padding: 2.5% 5%
+    padding: $small-spacing $base-spacing
 
 
 +media($large-viewport)
@@ -35,9 +28,9 @@
 
     td
       font-size: 0.85em
-      padding-bottom: 5%
+      padding-bottom: $small-spacing
 
 +media($mobile)
   .wholesale-page
     form
-      padding: 5% 10%
+      padding: $base-spacing * 1.25

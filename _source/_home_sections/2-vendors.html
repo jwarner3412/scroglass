@@ -1,7 +1,7 @@
 ---
 title: Find One
 ---
- <section class="vendors-home full-width"><div class="vendor-title"><h1>Where can i find one??</h1></div><div class="vendor-lists full-width"><div class="vendors-ri half-width"><h2>Rhode Island</h2><ul>{% for i in site.data.vendors %}
+ <section class="vendors-home full-width"><div class="vendor-title"><h1>Where can I find one??</h1></div><div class="vendor-lists full-width"><div class="vendors-ri half-width"><h2>Rhode Island</h2><ul>{% for i in site.data.vendors %}
 {% if i.loc == 'RI'%}<li><a href="{{i.url}}" target="_blank" class="link-button">{{i.name}}</a></li>{% endif %}
 {% endfor %}</ul></div><div class="vendors-web half-width"><h2>Online</h2><ul>{% for i in site.data.vendors %}
 {% if i.loc == 'web'%}<li><a href="{{i.url}}" target="_blank" class="link-button">{{i.name}}</a></li>{% endif %}

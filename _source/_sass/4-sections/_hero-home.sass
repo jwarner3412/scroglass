@@ -4,6 +4,7 @@
 .hero-home
   +bg-contain('/images/autopilot-back1.jpg')
   height: 60vh
+  margin-bottom: $small-spacing
 
   .bk-filter
     position: relative
@@ -21,22 +22,22 @@
     top: -2.5px
 
 .gallery-home
-  padding: 0 5%
+  padding: 0 $base-spacing
   height: 100%
   .link-wrap
     text-align: center
-    margin-top: 2.5%
+    margin-top: $small-spacing
 
   .large-photo
-    padding: 1% 5% 2% 5%
+    padding: $small-spacing $base-spacing
 
 @mixin hero-large-layout
   .hero-home
     .media-stack
       text-align: right
-      padding: 2.5% 7.5%
+      padding: $small-spacing $base-spacing
       .fb-like
-        margin: 0 20px
+        margin: 0 $base-spacing
 
     .hero-hook
       height: 100%
@@ -47,7 +48,7 @@
       right: 0
       bottom: 0
       left: 0
-      padding: 0 2.5% 2.5% 0
+      padding: 0 $small-spacing $small-spacing 0
 
   .hero-scro-logo
     height: 100%
@@ -66,7 +67,7 @@
   .hero-home
     h1
       text-align: center
-      padding: 0 10px
+      padding: 0 $small-spacing
 
     .hero-scro-logo
       height: 75%
@@ -76,4 +77,4 @@
       display: flex
       justify-content: space-between
       text-align: right
-      padding: 10% 5% 0 5%
+      padding: $base-spacing

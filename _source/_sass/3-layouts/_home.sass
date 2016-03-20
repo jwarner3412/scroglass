@@ -1,14 +1,19 @@
 .home-wrap
   +outer-container(100%)
+  min-height: 100vh
+  position: relative
+  padding-bottom: $footer-height
 
 .nav-head
   z-index: 1
 
 section
-  margin-bottom: 3em
+  margin-bottom: $base-spacing * 2
 
 footer
-  margin-top: 5%
+  position: absolute
+  bottom: 0
+
 
 +media($large-viewport)
   .nav-head
@@ -22,13 +27,14 @@ footer
     +shift($nav-offset)
     +span-columns($content-width)
 
+  aside
+    +span-columns($nav-offset)
+    +omega
+
   footer
     +shift($nav-offset)
     +span-columns($content-width)
 
-  aside
-    +span-columns($nav-offset)
-    +omega
 
 +media($tablet)
   .nav-head
@@ -43,12 +49,12 @@ footer
     +span-columns($content-width)
     +omega
 
-  footer
+  aside
     +span-columns($content-width)
     +shift($nav-offset)
     +omega
 
-  aside
+  footer
     +span-columns($content-width)
     +shift($nav-offset)
     +omega
@@ -66,10 +72,10 @@ footer
     +span-columns(4)
     +omega
 
-  footer
+  aside
     +span-columns(4)
     +omega
 
-  aside
+  footer
     +span-columns(4)
     +omega

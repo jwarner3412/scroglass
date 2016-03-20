@@ -22,6 +22,7 @@ $content-width: ($large-viewport-col - ($nav-offset * 2));
 
 //navbar height for content offset in mobile
 $mobile-nav-height: 50px;
+$footer-height: $mobile-nav-height*1.5;
 
 //breakpoints
 $mobile: new-breakpoint(min-width $first-breakpoint-value max-width $second-breakpoint-value - 1 $mobile-col);
