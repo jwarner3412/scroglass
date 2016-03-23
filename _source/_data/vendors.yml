@@ -9,3 +9,15 @@
 - name: Aqualab Technologies
   loc: web
   url: 'https://www.aqualabtechnologies.com'
+
+- name: High Maintenance Smoke Shop
+  loc: web
+  url: 'https://www.hmsmokeshop.com'
+
+- name: MJ Glass
+  loc: web
+  url: 'https://mj-glass-gallery.myshopify.com'
+
+- name: autopilotglass.com
+  loc: web
+  url: 'https://www.autopilotglass.com'
