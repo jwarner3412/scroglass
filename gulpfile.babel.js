@@ -213,6 +213,7 @@ gulp.task('default', ['jekyll'], () => {
   gulp.watch(['_source/**/*.sass'], ['jekyll', reload]);
   gulp.watch(['_source/**/*.scss'], ['jekyll', reload]);
   gulp.watch(['jadefiles/**/*.jade'], ['jekyll', reload]);
+  gulp.watch(['_source/**/*.js'], ['jekyll', reload]);
 });
 
 // Build and serve the output from the dist build

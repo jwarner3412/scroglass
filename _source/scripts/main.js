@@ -78,6 +78,46 @@
       console.error('Error during service worker registration:', e);
     });
   }
-
-  // Your custom JavaScript goes here
 })();
+
+(function(d, s, id) {
+  var js = d.getElementsByTagName(s)[0];
+  var fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {
+    return;
+  }
+  js = d.createElement(s);
+  js.id = id;
+  js.src = '//connect.facebook.net/en_US/';
+  js.src += 'sdk.js#xfbml=1&version=v2.5&appId=756751217760071';
+  console.log(js.src);
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, 'script', 'facebook-jssdk');
+
+(function(d, t) {
+  var g = d.createElement(t);
+  var s = d.getElementsByTagName(t)[0];
+  g.src = '//x.instagramfollowbutton.com/follow.js';
+  s.parentNode.insertBefore(g, s);
+})(document, 'script');
+
+(function(i, s, o, g, r, a, m) {
+  i.GoogleAnalyticsObject = r;
+  i[r] = i[r] || function() {
+    (i[r].q = i[r].q || []).push(arguments);
+  };
+  i[r].l = 1 * Number(new Date());
+  a = s.createElement(o);
+  m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m);
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-XXXXX-X', 'auto');
+ga('send', 'pageview');
+
+$('.carosel').slick({
+  autoplay: true,
+  autoplaySpeed: 2500,
+  arrows: false
+});

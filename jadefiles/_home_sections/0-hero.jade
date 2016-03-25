@@ -2,7 +2,7 @@
 |title: Home
 |---
 | 
-section.full-width
+.full-width
   .hero-home
     .bk-filter
       .media-stack
@@ -13,18 +13,18 @@ section.full-width
       .hero-hook.half-width
         h1 Creators of the <em>Original</em> <br><strong>Autopilot Torch Rig</strong>.
 
-  .gallery-home.full-width
-    .large-photo.full-width
-      img(src='{{ site.baseurl }}/images/gallery/10896871_1525337984412341_6907829687480644071_n.jpg')
-    .thumb-wrap.half-width
-      .thumb-photo.quarter-width
-        img(src='{{ site.baseurl }}/images/thumb1.jpg')
-      .thumb-photo.quarter-width
-        img(src='{{ site.baseurl }}/images/thumb2.jpg')
-    .thumb-wrap.half-width
-      .thumb-photo.quarter-width
-        img(src='{{ site.baseurl }}/images/thumb3.jpg')
-      .thumb-photo.quarter-width
-        img(src='{{ site.baseurl }}/images/thumb4.jpg')
-    .link-wrap.full-width
-      a(href="{{site.baseurl}}/gallery").button#gallery-link More Photos
+section.gallery-home.full-width
+  .carosel
+    .photo
+      img(src="/images/gallery/0-autopilot.jpg", alt="Autopilot")
+    .photo
+      img(src="/images/gallery/1-autopilot.jpg", alt="Autopilot")
+    .photo
+      img(src="/images/gallery/2-autopilot.jpg", alt="Autopilot")
+    .photo
+      img(src="/images/gallery/3-autopilot.jpg", alt="Autopilot")
+    .photo
+      img(src="/images/gallery/4-autopilot.jpg", alt="Autopilot")
+
+  .link-wrap.full-width
+    a(href="{{site.baseurl}}/gallery").button#gallery-link More Photos
